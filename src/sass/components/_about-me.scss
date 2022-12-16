@@ -8,6 +8,6 @@
   background-color: $color-back-secondary;
 }
 
-.about-me__subtitle{
-  margin-bottom: 30px;
+.about-me__text{
+  @include font(2.4rem, 3rem, 500);
 }
