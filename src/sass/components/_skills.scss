@@ -1,0 +1,61 @@
+.skills__list{
+  list-style: none;
+}
+
+.skills__left-content{
+  background-color: $color-back-primary;
+  @extend %padding-text-block;
+}
+
+.skills__right-content{
+  background-color: $color-back-accent-1;
+}
+
+.skill{
+  background-color: $color-light;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+  z-index: 1;
+  padding-left: 10px;
+  &:not(:last-child){
+    margin-bottom: 40px;
+  }
+}
+
+.skill-text{
+  @include font(1.4rem, 3rem, 600);
+  letter-spacing: 3.5px;
+  position: relative;
+  z-index: 3;
+  color: $color-text-light;
+  text-transform: uppercase;
+  }
+
+.skill-progress{
+  position: absolute;
+  left: 0;
+  height: 20px;
+  background-color: $color-back-accent-1;
+  z-index: 2;
+  &_html{
+    width: 90%;
+  }
+  &_sass{
+    width: 70%;
+  }
+  &_js{
+    width: 40%;
+  }
+  &_figma{
+    width: 80%;
+  }
+  &_git{
+    width: 70%;
+  }
+  &_vscode{
+    width: 90%;
+  }
+}

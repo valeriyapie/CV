@@ -1,0 +1,13 @@
+
+.about-me__left{
+  background-color: $color-back-accent-3;
+}
+
+.about-me__right{
+  @extend %padding-text-block;
+  background-color: $color-back-secondary;
+}
+
+.about-me__subtitle{
+  margin-bottom: 30px;
+}
