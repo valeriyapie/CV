@@ -1,0 +1,16 @@
+.languages__left{
+  background-color: $color-back-primary;
+  @extend %padding-text-block;
+}
+
+.languages__list{
+  list-style: circle;
+  &>li{
+    @include font(3rem, 3rem, 500);
+    margin-bottom: 54px;
+  }
+}
+
+.languages__right{
+  background-color: $color-back-accent-2;
+}

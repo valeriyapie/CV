@@ -1,0 +1,16 @@
+.courses__right{
+  background-color: $color-back-accent-3;
+}
+
+.courses__left{
+  background-color: $color-back-primary;
+  @extend %padding-text-block;
+}
+
+.courses__list{
+  list-style: circle;
+}
+
+.courses__list__item:not(:last-child){
+  margin-bottom: 25px;
+}

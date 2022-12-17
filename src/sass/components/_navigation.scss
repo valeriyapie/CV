@@ -1,0 +1,17 @@
+.navigation{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.navigation__link{
+  @include font(1.5rem, 1.7rem, 500);
+  @extend %transition;
+  text-decoration: none;
+  color: inherit;
+  &:hover,:focus{
+    color: $color-text-accent;
+
+  }
+}

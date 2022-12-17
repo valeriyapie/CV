@@ -1,0 +1,28 @@
+.layout-2-columns-wide-right{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 10px 0;
+  & >:first-child{
+    flex: 0 1 30%;
+  }
+
+  & >:last-child{
+    flex: 1 0 70%;
+  }
+}
+
+.layout-2-columns-wide-left{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 10px 0;
+  & >:first-child{
+    flex: 0 1 70%;
+  }
+
+  & >:last-child{
+    flex: 1 0 auto;
+  }
+}
+
