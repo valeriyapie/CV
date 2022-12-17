@@ -1,0 +1,39 @@
+.footer{
+  padding: 40px 0;
+}
+.footer__wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__social-list{
+  display: flex;
+  list-style: none;
+}
+
+.footer__social-list{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer__icon{
+  width: 60px;
+  height: 60px;
+  fill: $color-text;
+  @extend %transition;
+  &:hover{
+    fill: $color-back-accent-1;
+  }
+  & >*{
+    width: 100%;
+  }
+}
+
+
+.footer__author{
+  text-align: center;
+  color: $color-text;
+}
