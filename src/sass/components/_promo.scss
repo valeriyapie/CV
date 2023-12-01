@@ -1,0 +1,27 @@
+
+.promo__photo_block{
+  display: flex;
+  align-items: center;
+}
+
+.photo{
+  width: 100%;
+}
+
+.promo__info_block{
+  order: 2;
+  padding: 100px 0;
+  background-color: $color-back-primary;
+  display: flex;
+  justify-content: center;
+}
+
+.promo__text{
+  @include font(2rem, 2rem, 500, italic);
+  max-width: 450px;
+}
+
+.promo__title{
+  
+  margin-bottom: 30px;
+}
