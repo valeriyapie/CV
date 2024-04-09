@@ -1,28 +1,42 @@
-.layout-2-columns-wide-right{
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin: 10px 0;
-  & >:first-child{
-    flex: 0 1 30%;
-  }
 
-  & >:last-child{
-    flex: 1 0 70%;
+
+
+.layout__grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: start;
+
+  @media screen and (max-width: 920px) {
+    grid-template-columns: 1fr;
+
+    .promo__photo_block,.skills__left-content,
+  .courses__left,.languages__left{
+    grid-area: a;
+  };
+
+  .promo__info_block,.skills__right-content,
+  .courses__right,.languages__right{
+    grid-area: b;
+
+  }
+    
+    grid-template-areas: "b"
+                        "a"  ;
+
+
   }
 }
 
-.layout-2-columns-wide-left{
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin: 10px 0;
-  & >:first-child{
-    flex: 0 1 70%;
+
+
+.layout__grid.wide-right{
+  grid-template-columns: 2fr 1fr;
+
+  @media screen and (max-width: 920px) {
+    grid-template-columns: 1fr;
+    grid-template-areas: "b"
+                        "a"  ;
   }
 
-  & >:last-child{
-    flex: 1 0 auto;
-  }
 }
 
