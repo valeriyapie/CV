@@ -2,4 +2,10 @@
   max-width: $content-width;
   margin: auto;
   
+  @media  screen and (max-width: 1120px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    
+  }
 }
+
