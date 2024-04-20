@@ -1,1 +1,2 @@
-# (https://valeriyapie.github.io/CV/)
+# CV Пайкиной Валерии (https://valeriyapie.github.io/CV/)
+
